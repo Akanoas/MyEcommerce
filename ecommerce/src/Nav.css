@@ -1,0 +1,89 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.free{
+    padding: 10px 30px;
+    width: 100%;
+    background-color: #010f1c;
+    display: flex;
+}
+.free .icon{
+    color: yellow;
+    font-size: 40px;
+}
+.free p{
+    margin-left: 10px;
+    color: white;
+    margin-top: 12px;
+    font-size: 17px;
+    margin-left: 10px;
+}
+.main_header {
+    padding: 30px 40px;
+    width: 100%;
+    border-bottom:1px solid #010f1c;
+    
+}
+.main_header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_header .container .logo .h1{
+   color: darkblue;
+   box-shadow: #010f1c;
+   margin-right: 30px;
+}
+
+
+.main_header .container .search_box .input{
+    outline: none;
+    padding: 9px 57px;
+    border: 3px solid blue;
+    color: white;
+    width: 300px;
+}
+.main_header .container .search_box .input .button{
+    border: none;
+    outline: none;
+    padding: 11px 20px;
+    cursor: pointer;
+    background: blue;
+    color: #ecf2f7;
+}
+
+.main_header .container .icon{
+    display: flex;
+    margin-right: 50px;
+}
+.main_header .container .icon .account {
+   display: flex;
+   margin-right: 30px;
+}
+.main_header .container .icon .account .user_icon{
+    margin-right: 10px;
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+}
+.main_header .container .icon .second_icon{
+    display: flex;
+}
+.main_header .container .icon .second_icon{
+    display: flex;
+    margin-right: 5px;
+    font-size: 5px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.main_header .container .icon .second_icon .link{
+    margin-right: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    color: blue;
+}

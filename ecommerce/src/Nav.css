@@ -87,3 +87,21 @@
     cursor: pointer;
     color: blue;
 }
+.header {
+    width: 100%;
+    padding: 20px 30px;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    justify-content: space-between;
+}
+.header .container {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+.header .container .nav ul {
+    display: flex;
+}
+.header .container .nav .ul .li a{
+    margin-left: 20px;
+    list-style: none;
+}

@@ -33,26 +33,26 @@
     justify-content: space-between;
 }
 
-.main_header .container .logo .h1{
-   color: darkblue;
-   box-shadow: #010f1c;
-   margin-right: 30px;
+.text{
+    color: #00803E;
+    font-size: xx-large;
+    font-family: emoji;
 }
 
 
-.main_header .container .search_box .input{
+.input_for_search{
     outline: none;
     padding: 9px 57px;
-    border: 3px solid blue;
-    color: white;
+    border: 3px solid #00803E;
+    color: rgb(23, 20, 20);
     width: 300px;
 }
-.main_header .container .search_box .input .button{
+.button_search{
     border: none;
     outline: none;
     padding: 11px 20px;
     cursor: pointer;
-    background: blue;
+    background: #00803E;
     color: #ecf2f7;
 }
 
@@ -85,7 +85,7 @@
     margin-right: 5px;
     font-size: 22px;
     cursor: pointer;
-    color: blue;
+    color: #00803E;
 }
 .header {
     width: 100%;
@@ -100,8 +100,33 @@
 }
 .header .container .nav ul {
     display: flex;
+    list-style: none;
+
 }
-.header .container .nav .ul .li a{
+.links_nav{
     margin-left: 20px;
     list-style: none;
+    color: black;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.links_nav:hover{
+    color: aqua;
+}
+
+.auth button{
+    margin-right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    text-decoration: none;
+    
+}
+.login_link{
+    text-decoration: none;
+}
+.login_link:hover{
+    color: #00803E;
 }

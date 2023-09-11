@@ -4,8 +4,6 @@ import{AiOutlineHeart} from 'react-icons/ai'
 import{ BsBagCheck } from 'react-icons/bs'
 import{ AiOutlineUser } from 'react-icons/ai'
 import { Link } from "react-router-dom";
-import {CiLogin} from 'react-icons/ci';
-import {BiLogOut} from 'react-icons/bi';
 import  './Nav.css'
 const Nav = () => {
   return (
@@ -18,16 +16,15 @@ const Nav = () => {
     <div className="main_header">
         <div className="container">
             <div className="logo">
-               <h1> My Best Shopping house</h1>
+               <p className="text"> My Best Shopping house</p>
                 {/*<img src=".\image\ecommerce-logo-png-13.png" alt="logo" /> */}
             </div>
             <div className="search_box">
-                <input 
-                type="text"
+                <input className= "input_for_search" type="text"
                 placeholder="Enter the product name" 
                 autoComplete="off"
                 />
-                <button>Search</button>
+                <button className="button_search">Search</button>
             </div>
             <div className="icon">
                 <div className="account">
@@ -52,24 +49,23 @@ const Nav = () => {
             <div className="nav">
                 <ul>
                     <li>
-                        <Link to='/'>Home</Link>
+                        <Link to='/' className="links_nav">Home</Link>
                     </li>
                     <li>
-                        <Link to='/product'>Product</Link>
+                        <Link to='/product' className="links_nav">Product</Link>
                     </li>
                     <li>
-                        <Link to='/about'>About</Link>
+                        <Link to='/about' className="links_nav">About</Link>
                     </li>
                     <li>
-                        <Link to='/contact'>Contact</Link>
+                        <Link to='/contact' className="links_nav">Contact</Link>
                     </li>
                     
                 </ul>
             </div>
            
             <div className="auth">
-                <CiLogin />
-                <BiLogOut />
+                <button> <Link to='/Login' className="login_link">Login Here</Link> </button>
             </div>
         </div>
     </div>

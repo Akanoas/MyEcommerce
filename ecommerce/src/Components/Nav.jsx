@@ -36,8 +36,6 @@ const Nav = () => {
                 <div className="second_icon">
                     <Link to="/" className="link"> <AiOutlineHeart /> </Link>
                     <Link to="/cart" className="link"> <BsBagCheck /> </Link>
-
-                    <p></p>
                 </div>
           
             </div>
@@ -65,7 +63,9 @@ const Nav = () => {
             </div>
            
             <div className="auth">
-                <button> <Link to='/Login' className="login_link">Login Here</Link> </button>
+                
+                <button > <Link to='/Login' className="login_link">Login Here</Link> </button>
+              
             </div>
         </div>
     </div>

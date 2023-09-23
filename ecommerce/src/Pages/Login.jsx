@@ -28,7 +28,7 @@ export default function Login(){
                 console.log(data);
                 if(data.token){
                     console.log('Login successful');
-                    navigate('/authenicated')
+                    navigate('/authenticated')
                 }else{
                     console.log('Invalid username or password');
                     window.alert('Invalid username or password');
@@ -42,25 +42,25 @@ export default function Login(){
     
     return(
         <form onSubmit={handleSubmit}>
-        <label>
-          Username:
-          <input 
-          type="text" 
-          value={username} 
-          onChange={handleUsernameChange}
-          />
-        </label>
-        <br />
-        <label>
-          Password:
-          <input 
-          type="password" 
-          value={password} 
-          onChange={handlePasswordChange} 
-          />
-        </label>
-        <br />
-        <button type="submit">Login</button>
-      </form>
+            <label>
+            Username:
+            <input 
+            type="text" 
+            value={username} 
+            onChange={handleUsernameChange}
+            />
+            </label>
+            <br />
+            <label>
+            Password:
+            <input 
+            type="password" 
+            value={password} 
+            onChange={handlePasswordChange} 
+            />
+            </label>
+            <br />
+            <button type="submit">Login</button>
+        </form>
     );
 }

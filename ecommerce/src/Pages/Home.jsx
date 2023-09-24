@@ -1,11 +1,15 @@
+import { useState } from "react";
+
 import { Link } from "react-router-dom"
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { FiTruck } from 'react-icons/fi'
 import { BsCurrencyDollar} from 'react-icons/bs'
 import { CiPercent} from 'react-icons/ci'
 import { BsHeadphones } from 'react-icons/bs'
+import ProductList from "../Components/ProductList";
 import './Home.css'
 export default function Home(){
+    
     return(
         <>
             <div className="top_banner">
@@ -61,7 +65,7 @@ export default function Home(){
                         </div>
                         <div className="detail">
                             <h3>Free Shipping</h3>
-                            <p>Order up to $50</p>
+                            <p>Order up to $99</p>
                         </div>
 
                     </div>
@@ -97,6 +101,13 @@ export default function Home(){
                     </div>
 
                 </div>
+            </div>
+            <div className="product">
+                <div className="container">
+                < ProductList />
+
+                </div>
+
             </div>
         
         </>

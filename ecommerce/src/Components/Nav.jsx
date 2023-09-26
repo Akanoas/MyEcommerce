@@ -1,12 +1,14 @@
-import React from "react"
 import { FaTruckMoving } from 'react-icons/fa';
 import{AiOutlineHeart} from 'react-icons/ai'
 import{ BsBagCheck } from 'react-icons/bs'
 import{ AiOutlineUser } from 'react-icons/ai'
 import { Link } from "react-router-dom";
 import  './Nav.css'
+import ProductSearch from "./ProductSearch";
 const Nav = () => {
-  return (
+
+  
+    return (
     <>
     <div className="free">
         <div className="icon">
@@ -19,12 +21,8 @@ const Nav = () => {
                <p className="text"> My Best Shopping house</p>
                 {/*<img src=".\image\ecommerce-logo-png-13.png" alt="logo" /> */}
             </div>
-            <div className="search_box">
-                <input className= "input_for_search" type="text"
-                placeholder="Enter the product name" 
-                autoComplete="off"
-                />
-                <button className="button_search">Search</button>
+            <div>
+                <ProductSearch />
             </div>
             <div className="icon">
                 <div className="account">

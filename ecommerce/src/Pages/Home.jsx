@@ -7,6 +7,7 @@ import { BsCurrencyDollar} from 'react-icons/bs'
 import { CiPercent} from 'react-icons/ci'
 import { BsHeadphones } from 'react-icons/bs'
 import ProductList from "../Components/ProductList";
+import Footer from "../Components/Footer";
 import './Home.css'
 export default function Home(){
     
@@ -109,6 +110,7 @@ export default function Home(){
                 </div>
 
             </div>
+            <Footer />
         
         </>
 

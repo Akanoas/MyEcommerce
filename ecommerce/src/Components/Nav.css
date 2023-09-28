@@ -1,0 +1,132 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.free{
+    padding: 10px 30px;
+    width: 100%;
+    background-color: #010f1c;
+    display: flex;
+}
+.free .icon{
+    color: yellow;
+    font-size: 40px;
+}
+.free p{
+    margin-left: 10px;
+    color: white;
+    margin-top: 12px;
+    font-size: 17px;
+    margin-left: 10px;
+}
+.main_header {
+    padding: 30px 40px;
+    width: 100%;
+    border-bottom:1px solid #010f1c;
+    
+}
+.main_header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    color: #00803E;
+    font-size: xx-large;
+    font-family: emoji;
+}
+
+
+.input_for_search{
+    outline: none;
+    padding: 9px 57px;
+    border: 3px solid #00803E;
+    color: rgb(23, 20, 20);
+    width: 300px;
+}
+.button_search{
+    border: none;
+    outline: none;
+    padding: 11px 20px;
+    cursor: pointer;
+    background: #00803E;
+    color: #ecf2f7;
+}
+
+.main_header .container .icon{
+    display: flex;
+    margin-right: 50px;
+}
+.main_header .container .icon .account {
+   display: flex;
+   margin-right: 30px;
+}
+.main_header .container .icon .account .user_icon{
+    margin-right: 10px;
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+}
+.main_header .container .icon .second_icon{
+    display: flex;
+}
+.main_header .container .icon .second_icon{
+    display: flex;
+    margin-right: 5px;
+    font-size: 5px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.main_header .container .icon .second_icon .link{
+    margin-right: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #00803E;
+}
+.header {
+    width: 100%;
+    padding: 20px 30px;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    justify-content: space-between;
+}
+.header .container {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+.header .container .nav ul {
+    display: flex;
+    list-style: none;
+
+}
+.links_nav{
+    margin-left: 20px;
+    list-style: none;
+    color: black;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.links_nav:hover{
+    color: aqua;
+}
+
+.auth button{
+    margin-right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    text-decoration: none;
+    
+}
+.login_link{
+    text-decoration: none;
+}
+.login_link:hover{
+    color: #00803E;
+}

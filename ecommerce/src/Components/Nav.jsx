@@ -5,7 +5,7 @@ import{ AiOutlineUser } from 'react-icons/ai'
 import { Link } from "react-router-dom";
 import  './Nav.css'
 import ProductSearch from "./ProductSearch";
-const Nav = () => {
+const Nav = ({cart}) => {
 
   
     return (
@@ -33,7 +33,7 @@ const Nav = () => {
                 </div>
                 <div className="second_icon">
                     <Link to="/" className="link"> <AiOutlineHeart /> </Link>
-                    <Link to="/cart" className="link"> <BsBagCheck /> </Link>
+                    <Link to="/cart" className="link"> <BsBagCheck />{cart.lenght} </Link>
                 </div>
           
             </div>

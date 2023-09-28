@@ -3,9 +3,8 @@ import './ProductList.css'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import {AiOutlineEye} from 'react-icons/ai'
 import {AiOutlineHeart} from 'react-icons/ai'
-const ProductList = () => {
+const ProductList = ({cart, setCart}) => {
     const [products, setProducts] = useState([]);
-    const [cart, setCart] = useState([]);
     useEffect(() => {
         fetch('https://fakestoreapi.com/products')
         .then((response) => response.json())
@@ -31,7 +30,7 @@ const ProductList = () => {
                       <img src={product.image} alt={product.title} className='product-image'/>
                     </div>
                     <div className='product-icon'>
-                      <AiOutlineShoppingCart />
+                      <AiOutlineShoppingCart/>
                       <AiOutlineEye />
                       <AiOutlineHeart />
                     </div>

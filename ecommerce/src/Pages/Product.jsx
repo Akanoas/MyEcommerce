@@ -3,11 +3,10 @@ import {AiOutlineShoppingCart} from 'react-icons/ai'
 import {AiOutlineEye} from 'react-icons/ai'
 import {AiOutlineHeart} from 'react-icons/ai'
 import './Product.css'
-function Product() {
+function Product({cart, setCart}) {
     const [products, setProducts] = useState([]);
     const [categories, setCategories] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState('');
-    const [cart, setCart] = useState([]);
     useEffect(() => {
       // Fetching products data from the API
       fetch('https://fakestoreapi.com/products')
@@ -26,7 +25,8 @@ function Product() {
       quantity: 1
       }
       setCart([...cart, cartItem]);
-  }
+      
+    }
   
     const handleCategoryChange = (event) => {
       setSelectedCategory(event.target.value);

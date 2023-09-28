@@ -31,7 +31,7 @@ const ProductSearch = () => {
         <ul className="search-results">
             {products.map((product) => (
             <li key={product.id}>
-                <Link to={`/product/${product.id}`}>{product.title}</Link>
+                <Link to={`/products/${product.id}`}>{product.title}</Link>
             </li>
             ))}
         </ul>

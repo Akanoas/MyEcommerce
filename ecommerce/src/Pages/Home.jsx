@@ -9,7 +9,7 @@ import { BsHeadphones } from 'react-icons/bs'
 import ProductList from "../Components/ProductList";
 import Footer from "../Components/Footer";
 import './Home.css'
-export default function Home(){
+export default function Home({cart, setcart}){
     
     return(
         <>
@@ -105,7 +105,7 @@ export default function Home(){
             </div>
             <div className="product">
                 <div className="container">
-                < ProductList />
+                < ProductList cart={cart} setCart={setcart}/>
 
                 </div>
 
